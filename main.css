@@ -5,8 +5,10 @@ body {
 	font-size: 18px;
 }
 
+
 .blue-body {
-	background-color: teal;
+	background: teal;
+	height: 100%;
 	box-sizing: border-box;
 }
 
@@ -17,17 +19,17 @@ body {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	border: none;
 }
 
 .sign-up {
 	padding: 40px;
 	width: 400px;
 	display: block;
+	height: auto;
 	background-color: white;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	text-align: center;
 }
 
@@ -60,13 +62,29 @@ input {
 button {
 	display: block;
 	left: 10px;
-	width: 320px;
+	width: 320px; /*If width is set to the same as the inputs, why is it smaller?*/
 	height: auto;
 	font-size: 18px;
-	text-align: left;
+	text-align: center;
 	padding: 15px;
-	color: grey;
+	background-color: green;
 	border: 2px solid grey;
-	margin-top: 20px;
+	margin-top: 40px;
 	margin-bottom: 20px;
+}
+
+button:hover {
+	font-stretch: expanded; /*when I have this set to make font weight bold it works, but for some reason font-stretch isn't funtioning.*/
+	background-color: darkgreen;
+}
+
+footer {
+	display: block;
+	text-align: center; 
+	background-color: teal;
+	color: white;
+}
+
+footer a:hover {
+	font-weight: bold;
 }
