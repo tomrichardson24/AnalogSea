@@ -1,20 +1,21 @@
 body {
 	margin: 0;
-	padding: 0; /*if done in sequence it goes top, left, right and then i assume bottom.*/
+	padding: 0;
 	font-family: "Roboto", sans-serif;
 	font-size: 18px;
 }
 
-
 .blue-body {
-	background: teal;
+	background: #298eea;
+	padding: 60px 0 10px;
+	margin: 0;
 	height: 100%;
 	box-sizing: border-box;
+	font: 0;
 }
 
 .logo {
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-bottom: 30px;
 	height: 35px;
 	display: block;
 	margin-left: auto;
@@ -27,10 +28,9 @@ body {
 	display: block;
 	height: auto;
 	background-color: white;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 40px;
+	margin: 0 auto;
 	text-align: center;
+	border-radius: 5px;
 }
 
 .sign-up legend {
@@ -40,35 +40,44 @@ body {
 	font-weight: 300;
 	color: grey;
 	text-align: center;
-	letter-spacing: 0;
-	margin-left: auto;
-	margin-right: auto;
+/*	letter-spacing: 0;*/
+	margin: 0 auto 15px auto;
+	border: none;
+}
+
+.input-label {
+	display: block;
+	width: 100%;
+	text-align: left;
 }
 
 input { 
 	display: block;
-	left: 10px;
+	left: 15px;
 	width: 320px;
 	height: auto;
 	font-size: 18px;
 	text-align: left;
 	padding: 15px;
-	color: grey;
+	color: grey; 
 	border: 2px solid grey;
+	border-radius: 5px;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
 button {
 	display: block;
-	left: 10px;
+	left: 15px;
 	width: 320px; /*If width is set to the same as the inputs, why is it smaller?*/
 	height: auto;
 	font-size: 18px;
 	text-align: center;
+	color: white;
 	padding: 15px;
-	background-color: green;
+	background: green;
 	border: 2px solid grey;
+	border-radius: 5px;
 	margin-top: 40px;
 	margin-bottom: 20px;
 }
@@ -79,9 +88,12 @@ button:hover {
 }
 
 footer {
-	display: block;
+	display: inline-block; /*I would think this should just be set to block, but white-space appears above and below?*/
+	width: 100%;
+	padding: 1;
+	margin-top: 0; /*Used this to try and get rid of white bar above footer in explorer.*/
 	text-align: center; 
-	background-color: teal;
+	background: #298eea;
 	color: white;
 }
 
